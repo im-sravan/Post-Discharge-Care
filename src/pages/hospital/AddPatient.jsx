@@ -143,7 +143,7 @@ function AddPatient() {
       };
 
       const response = await fetch(
-        "http://localhost:5000/api/patients",
+        "https://post-discharge-care.onrender.com/api/patients",
         {
           method: "POST",
           headers: {

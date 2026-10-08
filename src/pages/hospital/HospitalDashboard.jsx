@@ -115,7 +115,7 @@ function HospitalDashboard() {
 
         const response = await fetch(
 
-          "http://localhost:5000/api/patients",
+          "https://post-discharge-care.onrender.com/api/patients",
 
           {
 
@@ -231,7 +231,7 @@ function HospitalDashboard() {
 
       const response = await fetch(
 
-        `http://localhost:5000/api/patients/${id}`,
+        `https://post-discharge-care.onrender.com/api/patients/${id}`,
 
         {
 
@@ -321,7 +321,7 @@ const fetchEmergencyAlerts = async () => {
 
     const response = await fetch(
 
-      "http://localhost:5000/api/emergency/hospital",
+      "https://post-discharge-care.onrender.com/api/emergency/hospital",
 
       {
 
@@ -397,7 +397,7 @@ const updateEmergencyStatus = async (
 
     const response = await fetch(
 
-      `http://localhost:5000/api/emergency/hospital/${alertId}/status`,
+      `https://post-discharge-care.onrender.com/api/emergency/hospital/${alertId}/status`,
 
       {
 
@@ -539,7 +539,7 @@ const updateEmergencyStatus = async (
 
       const response = await fetch(
 
-        "http://localhost:5000/api/patients",
+        "https://post-discharge-care.onrender.com/api/patients",
 
         {
 

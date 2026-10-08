@@ -20,7 +20,7 @@ function HospitalLogin() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/hospitals/login",
+        "https://post-discharge-care.onrender.com/api/hospitals/login",
         {
           method: "POST",
           headers: {

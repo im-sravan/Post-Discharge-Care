@@ -35,7 +35,7 @@ function HospitalRegister() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/hospitals/register",
+        "https://post-discharge-care.onrender.com/api/hospitals/register",
         {
           method: "POST",
           headers: {

@@ -59,7 +59,7 @@ function EditPatient() {
         setError("");
 
         const response = await fetch(
-          `http://localhost:5000/api/patients/${id}`,
+          `https://post-discharge-care.onrender.com/api/patients/${id}`,
           {
             method: "GET",
             headers: {
@@ -273,7 +273,7 @@ function EditPatient() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/patients/${id}`,
+        `https://post-discharge-care.onrender.com/api/patients/${id}`,
         {
           method: "PUT",
           headers: {

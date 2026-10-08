@@ -36,7 +36,7 @@ function FamilyDashboard() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/patients/family/me",
+        "https://post-discharge-care.onrender.com/api/patients/family/me",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -102,7 +102,7 @@ function FamilyDashboard() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/emergency/family",
+        "https://post-discharge-care.onrender.com/api/emergency/family",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -221,7 +221,7 @@ function FamilyDashboard() {
       setSendingEmergency(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/emergency/family",
+        "https://post-discharge-care.onrender.com/api/emergency/family",
         {
           method: "POST",
 

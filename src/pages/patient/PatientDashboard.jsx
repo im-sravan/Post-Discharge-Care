@@ -40,7 +40,7 @@ function PatientDashboard() {
     }
 
     const response = await fetch(
-      "http://localhost:5000/api/patients/me",
+      "https://post-discharge-care.onrender.com/api/patients/me",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -86,7 +86,7 @@ function PatientDashboard() {
     if (!token) return;
 
     const response = await fetch(
-      "http://localhost:5000/api/emergency/patient",
+      "https://post-discharge-care.onrender.com/api/emergency/patient",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -158,7 +158,7 @@ function PatientDashboard() {
     }
 
     const response = await fetch(
-      `http://localhost:5000/api/patients/medicine/${index}/taken`,
+      `https://post-discharge-care.onrender.com/api/patients/medicine/${index}/taken`,
       {
         method: "PUT",
 
@@ -239,7 +239,7 @@ function PatientDashboard() {
       setSendingEmergency(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/emergency/patient",
+        "https://post-discharge-care.onrender.com/api/emergency/patient",
         {
           method: "POST",
 
